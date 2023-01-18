@@ -1,0 +1,104 @@
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #333;
+}
+
+.header {
+  padding: 10px 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 80px;
+  color: white;
+}
+
+.window-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  /* background-color: rgb(159, 180, 181); */
+}
+
+.drawing-container {
+  display: flex;
+  flex-direction: row;
+  /* background-color: rgb(169, 169, 169); */
+}
+
+.tools-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.small-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+#colorPicker {
+  height: 30px;
+  width: 80px;
+  border: none;
+  padding: 0;
+}
+
+.tool-button {
+  height: 40px;
+  width: 80px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+}
+
+.tool-button.selected-button {
+  background-color: rgb(150, 150, 150);
+  transition: 0.5s;
+}
+
+.tool-button:active {
+  box-shadow: 0 2px rgb(175, 175, 175);
+}
+
+.grid-container {
+  margin: 20px;
+  margin-left: 0;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.grid-element {
+  background-color: white;
+  box-sizing: border-box;
+  border: 0.5px solid rgb(228, 227, 227);
+}
+
+.grid-element:hover {
+  background-color: rgb(210, 209, 209) !important;
+}
